@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font: 13px/1.5 "PingFang SC","Microsoft YaHei",tahoma,arial,"\5b8b\4f53",sans-serif;
+
+}
+li{
+    list-style-type: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 960px;
+    height: 60px;
+    margin: 0 auto;
+}
+.header-left{
+    width: 240px;
+    height: 30px;
+    align-self: flex-start;
+    background-color: blue;
+}
+.header-center{
+    width: 218px;
+    height: 32px;
+    background-color: red;
+}
+.header-right{
+    width: 190px;
+    height: 34px;
+    background: green;
+}
+
+.nav-wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 5px 0;
+}
+.nav-item{
+    margin-right: 20px;
+}
+.nav li:last-child{
+    margin-right: 0;
+}
+
+.content{
+    display: grid;
+    grid-gap: 15px;
+    width: 960px;
+    margin: 0 auto;
+    grid-template: 
+        "big1 big1 big1 cmid" 231px
+        "big1 big1 big1 cmid" 231px
+        "sm1  sm2  big2 big2"  231px
+        "rmid rmid big2 big2"  231px
+        "big3 big3 sm3  sm4"   231px
+        "big3 big3 rmid2 rmid2" 231px
+       / 231px 231px 231px 231px;
+}
+.grid-item{
+    background-color: orange;
+}
+.content .grid-item:nth-child(1){
+    grid-area: big1;
+    background: aliceblue;
+}
+.content .grid-item:nth-child(2){
+    grid-area: cmid;
+}
+.content .grid-item:nth-child(3){
+    grid-area: sm1;
+}
+.content .grid-item:nth-child(4){
+    grid-area: sm2;
+}
+.content .grid-item:nth-child(5){
+    grid-area: big2;
+}
+.content .grid-item:nth-child(6){
+    grid-area: rmid;
+}
+.content .grid-item:nth-child(7){
+    grid-area: big3;
+}
+.content .grid-item:nth-child(8){
+    grid-area: sm3;
+}
+.content .grid-item:nth-child(9){
+    grid-area: sm4;
+}
+.content .grid-item:nth-child(10){
+    grid-area: rmid2;
+}
+
+.store{
+    display: flex;
+    width: 960px;
+    margin: 0 auto;
+}
+.store-item{
+    width: 310px;
+    height: 290px;
+    background-color: deepskyblue;
+    box-sizing: border-box;
+}
+.store .store-item:nth-child(-n + 2){
+    margin-right: 15px;
+}

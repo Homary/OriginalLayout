@@ -14,23 +14,40 @@ li{
     align-items: center;
     width: 960px;
     height: 60px;
-    margin: 0 auto;
+    margin: 15px auto 0 auto;
 }
 .header-left{
     width: 240px;
     height: 30px;
     align-self: flex-start;
-    background-color: blue;
 }
 .header-center{
     width: 218px;
     height: 32px;
-    background-color: red;
+}
+.header-center img{
+    width: 100%;
+    height: 100%;
 }
 .header-right{
     width: 190px;
     height: 34px;
-    background: green;
+}
+.input-border{
+    padding: 5px 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #DDD;
+}
+.input-border button{
+    font-size: 110%;
+    font-weight: bolder;
+    border: 0;
+    background: transparent;
+}
+.input-border input{
+    width: 100px;
+    border: 0;
 }
 
 .nav-wrapper{
@@ -39,23 +56,30 @@ li{
 }
 .nav{
     display: flex;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 60px;
     padding: 5px 0;
+    border-top: 3px solid #000;
+    border-bottom: 1px solid #000;
 }
 .nav-item{
-    margin-right: 20px;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
 }
-.nav li:last-child{
-    margin-right: 0;
+.nav-item h3{
+    font-size: 13px;
+    font-family: "Times New Roman", "Microsoft YaHei", Times, serif !important;
+
 }
 
 .content{
     display: grid;
     grid-gap: 15px;
     width: 960px;
-    margin: 0 auto;
+    margin: 15px auto 0 auto;
     grid-template: 
         "big1 big1 big1 cmid" 231px
         "big1 big1 big1 cmid" 231px
@@ -63,14 +87,13 @@ li{
         "rmid rmid big2 big2"  231px
         "big3 big3 sm3  sm4"   231px
         "big3 big3 rmid2 rmid2" 231px
-       / 231px 231px 231px 231px;
+       / 1fr 1fr 1fr 1fr;
 }
 .grid-item{
-    background-color: orange;
+    position: relative;
 }
 .content .grid-item:nth-child(1){
     grid-area: big1;
-    background: aliceblue;
 }
 .content .grid-item:nth-child(2){
     grid-area: cmid;
@@ -99,12 +122,23 @@ li{
 .content .grid-item:nth-child(10){
     grid-area: rmid2;
 }
+.grid-item img{
+    width: 100%;
+    height: 100%;
+}
 
 .store{
     display: flex;
     width: 960px;
     margin: 0 auto;
 }
+
+.hr-img{
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+}
+
 .store-item{
     width: 310px;
     height: 290px;
@@ -113,4 +147,58 @@ li{
 }
 .store .store-item:nth-child(-n + 2){
     margin-right: 15px;
+}
+.store-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.show-mask-child{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 999;
+}
+
+.show-mask-child-show{
+    display: block;
+}
+.show-mask-child-hide{
+    display: none;
+}
+
+.block-hr{
+    width: 960px;
+    height: 10px;
+    margin: 0 auto;
+    border-bottom: 1px solid #000;
+}
+
+.footer-nav{
+    width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(6, 150px);
+    text-align: center;
+}
+.list dt, .list h5{
+    font-size: 120%;
+    font-weight: bolder;
+}
+.list dd{
+    margin: 10px 0;
+}
+.list h5+img{
+    width: 120px;
+    height: 120px;
+    margin: 10px 10px 0 10px;
 }

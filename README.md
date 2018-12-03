@@ -2,4 +2,6 @@
 
 1. [野兽派](http://www.thebeastshop.com/)  
 
-#### 首页布局 --- 固定宽度960px;grid结合flex
+#### 首页布局 --- 固定宽度960px;grid结合flex  
+
+![野兽派](../post/yeshoupai.png)

@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     font: 13px/1.5 "PingFang SC","Microsoft YaHei",tahoma,arial,"\5b8b\4f53",sans-serif;
-
 }
 li{
     list-style-type: none;
 }
+
+/*768 960 1200*/
 
 .header{
     display: flex;

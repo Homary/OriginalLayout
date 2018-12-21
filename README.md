@@ -4,4 +4,4 @@
 
 #### 首页布局 --- 固定宽度960px;grid结合flex  
 
-![野兽派](../post/yeshoupai.png)
+![野兽派](yeshoupai.png)

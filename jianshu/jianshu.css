@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style-type: none;
+}
+
+body{
+	font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+	font-size: 17px;
+	min-width: 768px;
+	color: #333;
+}
+.width-limit{
+	display: flex;
+	min-width: 768px;
+	max-width: 1440px;
+	height: 58px;
+	align-items: center;
+	margin: 0 auto;
+	border-bottom: 1px solid #EEE;
+}
+.logo{
+	flex: 0 0 100px;
+	height: 56px;
+}
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+.container{
+	flex: 1;
+	margin-left: 100px;
+}
+.container ul{
+	flex: 1;
+	display: flex;
+}
+.container .active{
+	color: #EA6F5a;
+}
+.container .tab{
+	margin: 15px; 
+	line-height: 40px;
+}
+.container .search input{
+	width: 108px;
+	height: 38px;
+	padding: 0 40px 0 20px;
+	font-size: 14px;
+	border: 1px solid #EEE;
+	border-radius: 40px;
+	background-color: #EEE;
+}
+.write-btn{
+	flex: 0 0 100px;
+	height: 40px;
+	margin:  8px 15px 0;
+	text-align: center;
+	line-height: 40px;
+	color: #FFF;
+	background-color: #EA6F56;
+	border-radius: 20px;
+}
+
+.main{
+	display: grid;
+	grid-template-columns: 500px 1fr;
+	width: 750px;
+	margin: 20px auto 0 auto;
+}
+.main-contain .swap-box img{
+	width: 485px;
+	height: 210px;
+}
+.swap-box{
+	position: relative;
+	width: 485px;
+	height: 210px;
+	margin-bottom: 40px;
+	border-radius: 2%;
+	overflow: hidden;
+}
+.swap-imgs{
+	position: absolute;
+	display: flex;
+	flex-wrap: nowrap;
+	height: 210px;
+	transition: all .3;
+}
+
+#note{
+	width: 485px;
+	padding: 30px 3px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.note-title{
+	display: block;
+	height: 18px;
+	margin: 10px 0 4px;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 1.5px;
+	color: #333;
+}
+.note-abstract{
+	margin-bottom: 15px;
+	font-size: 15px;
+	color: #999;
+}
+.note-meta{
+	display: grid;
+	grid-template-columns: 70px 30px 30px;
+	grid-column-gap: 5px;
+	font-size: 13px;
+	line-height: 20px;
+	color: #999;
+}
+.note-meta a{
+	color: #999;
+}
+.note-meta .icon-comment, .note-meta .icon-like{
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.note-meta .icon-comment{
+	background-image: url(img/评论.png);
+}
+.note-meta .icon-like{
+	background-image: url(img/爱心.png);
+}
+
+.aside .board{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 210px;
+}
+.aside .board img{
+	width: 100%;
+	height: 40px;
+}
+
